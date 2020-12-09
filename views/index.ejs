@@ -9,7 +9,7 @@
     <% if (todos.length) { %>
       <% todos.forEach((todo) => { %>
         <ul>
-          <li><%= todo %></li>
+          <li><%= todo %> - <%= todo.done ? 'Done' : 'Not Done' %></li>
         </ul>
       <% }) %>
     <% } else { %>
